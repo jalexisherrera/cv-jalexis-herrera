@@ -24,23 +24,28 @@ const LanguageSkills: React.FC = () => {
 
   return (
     <div className="debug">
-      <h3 className="font-semibold">Idioms</h3>
-      {languageSkills.map((skill) => (
-        <div key={skill.language} className="flex flex-col justify-center mb-4">
-          <div className="flex justify-between">
-            <h3 className="flex">{skill.language}</h3>
-            <span className="flex text-rigth"> {skill.percentage}%</span>
-          </div>
-          <div className="w-1/1">
-            <div className="bg-blue-500 h-2 rounded-full">
-              <div
-                className="h-2 bg-blue-800 rounded-full"
-                style={{ width: `${skill.percentage}%` }}
-              />
+      <h4 className="title-skill mb-2 h-6">Idioms</h4>
+      <div className="mt-6">
+        {languageSkills.map((skill) => (
+          <div
+            key={skill.language}
+            className="flex flex-col justify-center mb-4"
+          >
+            <div className="flex justify-between h-6">
+              <p className="flex text-sm">{skill.language}</p>
+              <span className="flex text-sm"> {skill.percentage}%</span>
+            </div>
+            <div className="w-1/1">
+              <div className="bg-blue-500 h-1 rounded-full">
+                <div
+                  className="h-1 bg-blue-800 rounded-full"
+                  style={{ width: `${skill.percentage}%` }}
+                />
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
