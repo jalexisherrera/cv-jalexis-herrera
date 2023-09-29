@@ -11,18 +11,17 @@ const Sidebar = () => {
       </div>
 
       <div className="flex flex-col gap-4 px-2 py-4 h-full">
-        <h2>Mis Habilidades</h2>
+        <h2 className="font-bold text-lg">Mis Habilidades</h2>
         <div>
-        <div>languages</div>
-        <LanguageSkills />
-      </div>
-      <div>
-        <ProgrammingLanguages />
-      </div>
-        
+          
+          <LanguageSkills />
+        </div>
+        <div>
+          <ProgrammingLanguages />
+        </div>
+
         <ExtraSkills />
       </div>
-      
     </aside>
   );
 };
