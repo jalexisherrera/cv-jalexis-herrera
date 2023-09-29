@@ -35,7 +35,7 @@ const ProgrammingLanguages: React.FC = () => {
   ];
 
   return (
-    <div>
+    <div className="debug">
       <h3 className="font-semibold">Programming Languages</h3>
       {programmingLangua.map((skill) => (
         <div key={skill.language} className="flex flex-col justify-center mb-4">

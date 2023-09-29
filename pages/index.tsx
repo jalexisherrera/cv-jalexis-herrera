@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 const Home = () => {
   return (
-    <div className="flex">
+    <div className="min-h-screen flex debug">
       <Sidebar />
       <CenterContent />
       <RightMenu />

@@ -8,7 +8,7 @@ interface ExtraSkills {
 const ExtraSkills: React.FC = () => {
   //define el percentage de cada idioma
   return (
-    <div >
+    <div className="debug">
       <h2>Extra Skills</h2>
       <div className="flex flex-col">
       <span>icon Bootstrap, materialize</span>
