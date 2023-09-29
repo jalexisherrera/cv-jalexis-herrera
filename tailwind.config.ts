@@ -13,8 +13,19 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      rightMenu: {
+        bg: {
+          dark: '#222',
+          light: '#fff',
+        },
+        text: {
+          dark: '#fff',
+          light: '#222',
+        },
+      },
     },
   },
   plugins: [],
 }
+
 export default config
