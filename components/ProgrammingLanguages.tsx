@@ -35,24 +35,27 @@ const ProgrammingLanguages: React.FC = () => {
   ];
 
   return (
-    <div className="debug">
-      <h3 className="font-semibold">Programming Languages</h3>
+    <div className="px-1">
+      <h3 className="title-skill h-6">Programming Languages</h3>
+      <div className="mt-6">
       {programmingLangua.map((skill) => (
-        <div key={skill.language} className="flex flex-col justify-center mb-4">
-          <div className="flex justify-between w-full">
-            <h3 className="flex">{skill.language}</h3>
-            <span className="flex text-rigth"> {skill.percentage}%</span>
+        <div key={skill.language} className="flex flex-col justify-center my-2">
+          <div className="flex justify-between h-6">
+            <p className="flex text-sm">{skill.language}</p>
+            <span className="flex text-sm"> {skill.percentage}%</span>
           </div>
           <div className="w-1/1">
-            <div className="bg-blue-500 h-2 rounded-full">
+            <div className="bg-blue-500 h-1 rounded-full">
               <div
-                className="h-2 bg-blue-800 rounded-full"
+                className="h-1 bg-blue-800 rounded-full"
                 style={{ width: `${skill.percentage}%` }}
               />
             </div>
           </div>
         </div>
+       
       ))}
+       </div>
     </div>
   );
 };
