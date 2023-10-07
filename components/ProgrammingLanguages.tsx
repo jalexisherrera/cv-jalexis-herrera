@@ -12,15 +12,7 @@ const ProgrammingLanguages: React.FC = () => {
       language: "Html",
       percentage: 90,
     },
-    {
-      language: "PHP",
-      percentage: 100,
-    },
-    {
-      language: "python",
-      percentage: 70,
-    },
-    {
+        {
       language: "javascript",
       percentage: 70,
     },
@@ -28,21 +20,18 @@ const ProgrammingLanguages: React.FC = () => {
       language: "css",
       percentage: 85,
     },
-    {
-      language: "Java",
-      percentage: 70,
-    },
+ 
   ];
 
   return (
     <div className="px-1">
-      <h3 className="title-skill h-6">Programming Languages</h3>
-      <div className="mt-6">
+      <h3 className="title-skill">Programming Languages</h3>
+      <div className="mt-3">
       {programmingLangua.map((skill) => (
-        <div key={skill.language} className="flex flex-col justify-center my-2">
-          <div className="flex justify-between h-6">
-            <p className="flex text-sm">{skill.language}</p>
-            <span className="flex text-sm"> {skill.percentage}%</span>
+        <div key={skill.language} className="flex flex-col justify-center my-2 h-4">
+          <div className="flex justify-between">
+            <p className="flex textSkills">{skill.language}</p>
+            <span className="flex textSkills"> {skill.percentage}%</span>
           </div>
           <div className="w-1/1">
             <div className="bg-blue-500 h-1 rounded-full">
