@@ -3,6 +3,7 @@ import React from "react";
 interface LanguageSkill {
   language: string;
   percentage: number;
+  level: string;
 }
 
 const LanguageSkills: React.FC = () => {
@@ -10,20 +11,18 @@ const LanguageSkills: React.FC = () => {
   const languageSkills: LanguageSkill[] = [
     {
       language: "English",
+      level: "90%",
       percentage: 90,
     },
     {
       language: "Spanish",
+      level: "Native",
       percentage: 100,
-    },
-    {
-      language: "Frances",
-      percentage: 70,
     },
   ];
 
   return (
-    <div className="debug">
+    <div className="px-1">
       <h4 className="title-skill mb-2 h-6">Idioms</h4>
       <div className="mt-6">
         {languageSkills.map((skill) => (
@@ -33,7 +32,7 @@ const LanguageSkills: React.FC = () => {
           >
             <div className="flex justify-between h-6">
               <p className="flex text-sm">{skill.language}</p>
-              <span className="flex text-sm"> {skill.percentage}%</span>
+              <span className="flex text-sm"> {skill.level}</span>
             </div>
             <div className="w-1/1">
               <div className="bg-blue-500 h-1 rounded-full">
