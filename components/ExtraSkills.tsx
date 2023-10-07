@@ -1,23 +1,34 @@
 import React from "react";
+import { TbLayersIntersect } from "react-icons/tb";
 
-interface ExtraSkills {
-  language: string;
-  percentage: number;
+interface ExtraSkill {
+  skill: string;
 }
 
 const ExtraSkills: React.FC = () => {
+  const extraSkills: ExtraSkill[] = [
+    {
+      skill: "Bootstrap, Tailwind",
+    },
+    {
+      skill: "Wordpress, Prestashop",
+    },
+    {
+      skill: "Shopify, Magento",
+    },
+  ];
   //define el percentage de cada idioma
   return (
-    <div className="debug">
-      <h2>Extra Skills</h2>
-      <div className="flex flex-col">
-      <span>icon Bootstrap, materialize</span>
-      <span>Stylus, Sass, Less</span>
-      <span>Gulp, webpack, grunt</span>
-      <span>Git Knowledge</span>
-      <span>WordPress, Prestashop</span>
+    <div className="px-1">
+      <h4 className="title-skill">Extra Skills</h4>
+      <div className="mt-3">
+        {extraSkills.map((skill) => (
+          <div key={skill.skill} className="flex">
+            <TbLayersIntersect className="text-blue-800 text-xl scale-x-[-1] mr-2" />
+            <p className="flex textSkills">{skill.skill}</p>
+          </div>
+        ))}
       </div>
-      
     </div>
   );
 };
