@@ -22,17 +22,17 @@ const LanguageSkills: React.FC = () => {
   ];
 
   return (
-    <div className="px-1">
-      <h4 className="title-skill mb-2 h-6">Idioms</h4>
-      <div className="mt-6">
+    <div className="px-1 ">
+      <h4 className="title-skill">Idioms</h4>
+      <div className="mt-3 ">
         {languageSkills.map((skill) => (
           <div
             key={skill.language}
-            className="flex flex-col justify-center mb-4"
+            className="flex flex-col justify-center mb-4 h-2"
           >
-            <div className="flex justify-between h-6">
-              <p className="flex text-sm">{skill.language}</p>
-              <span className="flex text-sm"> {skill.level}</span>
+            <div className="flex justify-between ">
+              <p className="flex textSkills">{skill.language}</p>
+              <span className="flex textSkills"> {skill.level}</span>
             </div>
             <div className="w-1/1">
               <div className="bg-blue-500 h-1 rounded-full">
