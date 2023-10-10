@@ -46,7 +46,7 @@ body {
 }
 
 .p-description {
-  @apply text-[16px] lg:text-xl md:text-sm font-normal mt-5 p-2 whitespace-normal adjust-text lg:w-[70%];
+  @apply text-center text-[16px] lg:text-xl md:text-sm font-normal mt-5 p-2 whitespace-normal adjust-text lg:w-[70%];
 }
 
 /* .card-knowledge {
