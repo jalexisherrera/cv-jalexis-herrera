@@ -1,4 +1,5 @@
 import { AboutMe } from "../AboutMe";
+import { MyKnowledge } from "../MyKnowledge";
 import { Footer } from "./Footer";
 const CenterContent = () => {
   return (
@@ -6,7 +7,9 @@ const CenterContent = () => {
       <section className="rounded-lg">
         <AboutMe />
       </section>
-      <div className="debug">My Knowledge</div>
+      <div className="debug">
+        <MyKnowledge />
+      </div>
       <div className="debug">Education</div>
       <div className="debug">Porfolio</div>
       <div className="justify-items-end">
