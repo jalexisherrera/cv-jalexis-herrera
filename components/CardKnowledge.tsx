@@ -16,22 +16,22 @@ const CardKnowledge = ({ knowledgeData }: CardKnowledgeProps) => {
     const knowledgeDatas = [
         {
           Icon: LiaLaptopCodeSolid,
-          title: "Desarrollo Web",
+          title: "Web development",
           description: "Webs, blogs",
         },
         {
           Icon: BsDatabaseGear,
-          title: "Gestión de Bases de Datos",
+          title: "Database Management",
           description: "SQL, NoSQL",
         },
         {
           Icon: BsGear,
-          title: "Desarrollo de API",
+          title: "API development",
           description: "Next.js, PHP",
         },
         {
           Icon: SiSpringsecurity,
-          title: "Seguridad de Aplicaciones",
+          title: "Application Security",
           description: "Autenticación, Autorización",
         },
         {

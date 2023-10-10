@@ -1,17 +1,22 @@
-import { AboutMe } from "../AboutMe";
-import { MyKnowledge } from "../MyKnowledge";
+import { AboutMe } from "@/components/AboutMe";
+import { MyEducation } from "@/components/MyEducation";
+import { MyKnowledge } from "@/components/MyKnowledge";
 import { Footer } from "./Footer";
+
+
 const CenterContent = () => {
   return (
     <div className="flex flex-col gap-10 w-full justify-stretch min-h-screen">
       <section className="rounded-lg">
         <AboutMe />
       </section>
-      <div className="debug">
+      <section className="">
         <MyKnowledge />
-      </div>
-      <div className="debug">Education</div>
-      <div className="debug">Porfolio</div>
+      </section>
+      <section className="bg-slate-500 rounded-lg p-6">
+        <MyEducation />
+      </section>
+      <section className="debug">Porfolio</section>
       <div className="justify-items-end">
         <Footer />
       </div>

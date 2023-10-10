@@ -12,7 +12,7 @@ interface CardKnowledgeProps {
 const MyKnowledge = () => {
     return (
         <div className="flex flex-col justify-center items-center mt-6">
-            <h1 className="lg:text-[48px] md:text-3xl sm:text-lg p-2 tracking-tighter leading-snug font-bold relative whitespace-normal line-clamp">My Knowledge</h1>
+            <h2 className="lg:text-[48px] md:text-3xl sm:text-lg p-2 tracking-tighter leading-snug font-bold relative whitespace-normal line-clamp">My Knowledge</h2>
 
             <p className="mt-5 p-description">
                 I am a student of Systems Engineering with experience in web
