@@ -7,6 +7,9 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+.debug {
+  border: 1px solid rgba(255, 0, 0, 0.249);
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -14,7 +17,9 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+
 }
+
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +29,54 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+   
+}
+.about-me-title {
+  @apply lg:text-[48px] md:text-3xl sm:text-lg p-2 tracking-tighter leading-snug font-bold relative whitespace-normal line-clamp-3;
+}
+
+.about-me-description {
+  @apply text-[16px] lg:text-xl md:text-sm font-normal mt-5 lg:mr-10 md:mr-4 p-2 whitespace-normal line-clamp-6 adjust-text;
+}
+
+.scrollbox::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollbox::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbox::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.scrollbox:hover::-webkit-scrollbar-thumb {
+  background: #5a5a5a;
+}
+
+.scrollbox::-webkit-scrollbar-thumb:hover {
+  
+  background: #898989;
+}
+
+.scrollbox::-webkit-scrollbar-thumb:active {
+  background: #a5a5a5;
+}
+
+.scrollbox {
+  scrollbar-gutter: stable;
+}
+.title-skill{
+  font-size: 15px;
+  font-weight: 500;
+
+}
+.textSkills{
+  font-size: 13px;
+  font-weight: 400;
+  
+}
+.adjust-text {
+  text-wrap: balance;
 }
