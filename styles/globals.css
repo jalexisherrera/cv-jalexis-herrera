@@ -31,6 +31,13 @@ body {
     rgb(var(--background-start-rgb));
    
 }
+.about-me-title {
+  @apply lg:text-[48px] md:text-3xl sm:text-lg p-2 tracking-tighter leading-snug font-bold relative whitespace-normal line-clamp-3;
+}
+
+.about-me-description {
+  @apply text-[16px] lg:text-xl md:text-sm font-normal mt-5 lg:mr-10 md:mr-4 p-2 whitespace-normal line-clamp-6 adjust-text;
+}
 
 .scrollbox::-webkit-scrollbar {
   width: 12px;
@@ -49,6 +56,7 @@ body {
 }
 
 .scrollbox::-webkit-scrollbar-thumb:hover {
+  
   background: #898989;
 }
 
@@ -68,4 +76,7 @@ body {
   font-size: 13px;
   font-weight: 400;
   
+}
+.adjust-text {
+  text-wrap: balance;
 }
