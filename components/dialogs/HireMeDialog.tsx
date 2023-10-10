@@ -44,7 +44,7 @@ import {
           sx={{
             mt: "2.5rem",
           }}
-          className="bg-gradient-to-b from-gradient-primary group to-[#0052d6]"
+          className="bg-blue-700 bg-gradient-to-b from-gradient-primary group to-[#0052d6]"
           onClick={handleOpen}
         >
           Hire Me
