@@ -6,18 +6,20 @@ import { Portfolio } from "@/components/Portfolio";
 
 const CenterContent = () => {
   return (
-    <div className="flex flex-col gap-10 w-full justify-stretch min-h-screen">
+    <div className="flex flex-col gap-10 w-full">
       <section className="rounded-lg">
         <AboutMe />
       </section>
-      <section className="">
+      <section className="bg-transparent">
         <MyKnowledge />
       </section>
-      <section className="bg-slate-500 rounded-lg p-6">
+      <section className="bg-blue-800/30 rounded-lg p-6">
         <MyEducation />
       </section>
-      <section className="debug overflow-auto">
-        <Portfolio />
+      <section className="">
+        <div className="overflow-x-auto">
+          <Portfolio />
+        </div>
       </section>
       <div className="justify-items-end">
         <Footer />

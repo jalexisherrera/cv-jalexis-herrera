@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 const RightMenu = () => {
   return (
-    <aside className="h-full[100vh] border debug gap-2">
+    <aside className="h-full[100vh] shadow-2xl gap-2">
       <div className="h-full p-4 flex flex-col items-center">
         <h2 className="text-lg font-semibold">Links</h2>
         <ul>

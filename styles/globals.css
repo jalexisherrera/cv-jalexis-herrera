@@ -6,8 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  
+
 }
+
 .debug {
   border: 1px solid rgba(255, 0, 0, 0.249);
 }
@@ -17,21 +18,22 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-    
+
   }
 
 }
 
+.scrollable-container {
+  overflow-y: auto;
+  max-height: 100vh;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-   
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+
 }
 
 @media screen and (max-width: 412x) {
@@ -39,6 +41,7 @@ body {
     @apply text-[14px] min-w-full p-3 mr-2 ml-2;
   }
 }
+
 .about-me-title {
   @apply lg:text-[48px] md:text-3xl sm:text-lg p-2 tracking-tighter leading-snug font-bold relative whitespace-normal line-clamp-3;
 }
@@ -50,10 +53,6 @@ body {
 .p-description {
   @apply text-center text-[16px] lg:text-xl md:text-sm font-normal mt-5 p-2 whitespace-normal adjust-text lg:w-[70%];
 }
-
-/* .card-knowledge {
-  @apply flex flex-col bg-blue-700 items-center text-center text-text-primary pt-6 pb-10 mx-2 shadow-lg shadow-blue-500 rounded-lg hover:scale-95;
-} */
 
 .card-knowledge-container {
   @apply grid sm:grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-3 gap-5;
@@ -67,7 +66,7 @@ body {
   background: transparent;
 }
 
-.scrollbox::-webkit-scrollbar-thumb {
+/* .scrollbox::-webkit-scrollbar-thumb {
   background: transparent;
 }
 
@@ -86,18 +85,19 @@ body {
 
 .scrollbox {
   scrollbar-gutter: stable;
-}
-.title-skill{
+} */
+.title-skill {
   font-size: 15px;
   font-weight: 500;
 
 }
-.textSkills{
+
+.textSkills {
   font-size: 13px;
   font-weight: 400;
-  
+
 }
+
 .adjust-text {
   text-wrap: balance;
 }
-
