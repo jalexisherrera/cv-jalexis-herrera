@@ -23,7 +23,7 @@ const ItemsPortfolio = ({
 }: PortfolioProps) => {
   
   return (
-    <div className="flex flex-col cursor-pointer hover:scale-95 hover:dark:bg-slate-900 hover:bg-blue-800/30 hover:rounded-md hover:p-2 min-w-full gap-2">
+    <div className="flex items-center flex-col cursor-pointer hover:scale-95 hover:dark:bg-slate-900 hover:bg-blue-800/30 hover:rounded-md hover:p-2 min-w-full gap-2">
       <Image
         className="rounded-lg transition-all duration-300 ease-in shadow-md hover:shadow-blue-500"
         src={img}

@@ -16,7 +16,7 @@ const Home = () => {
         <meta property="og:title" content="CV Jaime A. Herrer R." key="title" />
       </Head>
       
-      <div className="relative bg-gray-300/70 dark:bg-inherit">
+      <div className="relative bg-inherit">
         <BackgroundVideo />
         <div className="flex gap-5">
           <Sidebar />
