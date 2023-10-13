@@ -2,7 +2,7 @@ import { AboutMe } from "@/components/AboutMe";
 import { MyEducation } from "@/components/MyEducation";
 import { MyKnowledge } from "@/components/MyKnowledge";
 import { Footer } from "./Footer";
-
+import { Portfolio } from "@/components/Portfolio";
 
 const CenterContent = () => {
   return (
@@ -16,7 +16,9 @@ const CenterContent = () => {
       <section className="bg-slate-500 rounded-lg p-6">
         <MyEducation />
       </section>
-      <section className="debug">Porfolio</section>
+      <section className="debug overflow-auto">
+        <Portfolio />
+      </section>
       <div className="justify-items-end">
         <Footer />
       </div>
