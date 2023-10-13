@@ -2,7 +2,7 @@ import { ItemsPortfolio } from "@/components/ItemsPortfolio";
 
 const Portfolio = () => {
   return (
-    <div className="w-1/2 p-4">
+    <div className=" w-2/3 md:w-1/3 p-4">
       <div className="flex gap-5">
         <ItemsPortfolio
           img="/portfolio/contandonos.jpg"
