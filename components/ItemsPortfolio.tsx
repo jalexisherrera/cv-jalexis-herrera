@@ -21,21 +21,22 @@ const ItemsPortfolio = ({
   img,
   link,
 }: PortfolioProps) => {
+  
   return (
-    <div className="flex flex-col w-96 gap-2 ">
+    <div className="flex flex-col cursor-pointer hover:scale-95 hover:dark:bg-slate-900 hover:bg-blue-800/30 hover:rounded-md hover:p-2 min-w-full gap-2">
       <Image
-        className="rounded-lg group-hover:scale-105 transition-all duration-300 ease-in  shadow-md group-hover:shadow-blue-500"
+        className="rounded-lg transition-all duration-300 ease-in shadow-md hover:shadow-blue-500"
         src={img}
         alt="Portfolio Image"
         width={380}
         height={380}
       />
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <p>{additionalInfo}</p>
-      <p>{languages}</p>
+      <h3 className="font-semibold text-lg">{title}</h3>
+      <p className="text-md">{description}</p>
+      {/* <p className="text-sm">{additionalInfo}</p> */}
+      <p className="text-xs font-bold">{languages.join(", ")}</p>
       <Button 
-          className="bg-blue-700 w-[50%] p-2 mt-2 text-white bg-gradient-to-b from-gradient-primary group to-[#0052d6]">
+          className="bg-blue-700 p-2 mt-2 text-white bg-gradient-to-b from-gradient-primary group to-[#0052d6]">
         <Link
           role="button"
           aria-haspopup="true"

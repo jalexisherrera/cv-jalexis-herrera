@@ -4,7 +4,7 @@ import { HireMeDialog } from "./dialogs/HireMeDialog";
 
 const AboutMe = () => {
   return (
-    <div className="h-full lg:flex md:flex items-center dark:bg-slate-500 rounded-lg">
+    <div className="h-full p-2 lg:flex md:flex items-center bg-blue-800/30 dark:bg-slate-900 rounded-lg">
       <div className="">
         <Image
           src="/img/Alexis-about-me.png"

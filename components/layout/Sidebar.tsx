@@ -25,7 +25,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <aside className="w-80 px-3 flex flex-col bg-white/70 dark:bg-white/60">
+    <aside className="w-80 px-3 flex flex-col dark:bg-white/60 over">
       <div className="container-card flex flex-col gap-5 px-3 py-4 h-full shadow-lg">
         {/* Botón para abrir/cerrar el menú en dispositivos móviles */}
 {/*         <div className="mobile-menu-button">
