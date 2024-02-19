@@ -1,0 +1,20 @@
+{
+  "version": "2.2.0",
+  "summary": {
+    "title": "Threat Model CV",
+    "owner": "Alxie",
+    "description": "Revisión de amenazas en CV",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "alexizher"
+      }
+    ],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "Alexis",
+    "threatTop": 0
+  }
+}
